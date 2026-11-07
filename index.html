@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Premium Setter — Qualified B2B appointments, booked for you</title>
+<meta name="description" content="Premium Setter books qualified sales appointments for B2B teams. Start with a low-risk demo and pay only for a result you can verify.">
+<meta name="theme-color" content="#090b16">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090b16;--panel:#121629;--line:#2a3050;--text:#f4f6ff;--muted:#b8bed6;--accent:#5b8cff;--green:#5ee0a0;--red:#e11d2e}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:14px 26px;border-radius:12px;background:#fff;color:#090b16;font-weight:700;font-size:17px;text-decoration:none;border:0;cursor:pointer}
+.btn:hover{background:#e6e9f5}
+.btn.ghost{background:transparent;color:var(--text);border:2px solid var(--line)}
+.btn.ghost:hover{border-color:#fff}
+header{position:sticky;top:0;z-index:10;background:rgba(9,11,22,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:68px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.06em;text-decoration:none}
+.logo{width:34px;height:34px;border-radius:9px;background:#fff;color:#090b16;display:grid;place-items:center;font-weight:800}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--muted);font-weight:500}
+nav a:hover{color:#fff}
+.nav .btn{min-height:44px;padding:10px 18px;font-size:15px}
+section{padding:84px 0}
+.eyebrow{display:inline-block;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.04;letter-spacing:-.02em;margin:0 0 20px}
+h2{font-size:clamp(30px,4vw,44px);line-height:1.1;letter-spacing:-.015em;margin:0 0 16px}
+h3{font-size:20px;margin:0 0 8px}
+h1 em,h2 em{font-style:normal;color:var(--accent)}
+p{margin:0 0 16px;color:var(--muted)}
+.lead{font-size:19px;max-width:620px}
+.hero{padding:72px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.pill{display:inline-block;border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:600;margin-bottom:22px}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin:26px 0 14px}
+.fine{font-size:14px;color:var(--muted)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:26px}
+.sample{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#ffd23f;margin-bottom:12px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:16px}
+.stat{background:#0d1020;border:1px solid var(--line);border-radius:14px;padding:14px}
+.stat b{display:block;font-size:26px}
+.stat span{font-size:13px;color:var(--muted)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid var(--line);font-weight:600}
+.row small{color:var(--green);font-weight:700}
+.strip{padding:28px 0;border-block:1px solid var(--line);color:var(--muted)}
+.strip .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;align-items:center;justify-content:center;font-weight:600}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:36px}
+.num{width:40px;height:40px;border-radius:12px;background:#1b2140;color:var(--accent);display:grid;place-items:center;font-weight:800;margin-bottom:14px}
+.checks{list-style:none;padding:0;margin:18px 0 0}
+.checks li{padding-left:30px;position:relative;margin:10px 0;color:var(--text)}
+.checks li::before{content:"";position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23090b16' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E") center/12px no-repeat}
+.offer{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+.price{font-size:72px;font-weight:800;letter-spacing:-.03em;line-height:1}
+.price small{font-size:18px;font-weight:600;color:var(--muted);letter-spacing:0}
+.tag{display:inline-block;background:var(--red);color:#fff;font-weight:700;font-size:13px;letter-spacing:.08em;padding:6px 12px;border-radius:8px;margin-bottom:16px}
+details{border-top:1px solid var(--line);padding:20px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:700;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--accent);font-size:24px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:12px 0 0}
+.about{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center}
+.avatar{width:96px;height:96px;border-radius:50%;background:#1b2140;display:grid;place-items:center;font-weight:800;font-size:34px;color:var(--accent)}
+.final{text-align:center;background:var(--panel);border-block:1px solid var(--line)}
+footer{padding:48px 0;color:var(--muted);font-size:15px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px}
+.foot a{display:block;text-decoration:none;margin:6px 0}
+.foot a:hover{color:#fff}
+.legal{padding:48px 0;border-top:1px solid var(--line)}
+.legal h2{font-size:26px;margin-top:28px}
+.legal p{font-size:15px}
+a:focus-visible,summary:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media(max-width:860px){
+nav ul{display:none}
+.hero-grid,.offer,.grid3,.grid4{grid-template-columns:1fr}
+section{padding:60px 0}
+.about{grid-template-columns:1fr}
+.price{font-size:56px}
+.btn{width:100%}
+.nav .btn{width:auto}
+}
+</style>
+</head>
+<body>
+
+<!--
+  BEFORE YOU PUBLISH — edit the CONFIG block at the bottom of this file:
+  1. PRICE / PILOT_COUNT / DELIVERY_DAYS / REFUND must match your real Whop plan and what you can honestly deliver.
+  2. CHECKOUT_URL must be the Whop plan for THIS price (the old link charges $5).
+  3. EMAIL must be a real inbox on a domain you own. FOUNDER_NAME / FOUNDER_BIO must be real.
+  4. Have a lawyer or a trusted template service review the Privacy / Terms / Refund text at the bottom.
+-->
+
+<header>
+<div class="wrap nav">
+<a class="brand" href="#top" aria-label="Premium Setter home"><span class="logo">P</span>PREMIUM SETTER</a>
+<nav aria-label="Main"><ul>
+<li><a href="#how">How it works</a></li>
+<li><a href="#offer">Demo offer</a></li>
+<li><a href="#faq">FAQ</a></li>
+</ul></nav>
+<a class="btn" data-checkout href="#offer">Start the demo</a>
+</div>
+</header>
+
+<main id="top">
+
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<span class="pill">Launch demo · limited spots</span>
+<h1>Qualified sales appointments, <em>booked for you.</em></h1>
+<p class="lead">We research your ideal buyers, start real conversations, qualify them, and put meetings on your calendar. Start with a small <span data-bind="pilotCount">1</span>-appointment demo for <b style="color:#fff" data-bind="price">$19</b> and see the quality before you commit to more.</p>
+<div class="cta-row">
+<a class="btn" data-checkout href="#offer">Start the demo — <span data-bind="price">$19</span></a>
+<a class="btn ghost" href="#how">See how it works</a>
+</div>
+<p class="fine"><span data-bind="refund">Full refund if we don't deliver your appointment.</span> Secure checkout by Whop.</p>
+</div>
+
+<div class="card" aria-label="Example dashboard">
+<div class="sample">Example only — not real client data</div>
+<div class="stats">
+<div class="stat"><b>12</b><span>Meetings booked</span></div>
+<div class="stat"><b>9</b><span>Held this month</span></div>
+</div>
+<div class="row"><span>Mon · Discovery call</span><small>Booked</small></div>
+<div class="row"><span>Tue · Strategy call</span><small>Booked</small></div>
+<div class="row"><span>Wed · Intro call</span><small>Booked</small></div>
+<div class="row"><span>Thu · Demo</span><small>Booked</small></div>
+</div>
+</div>
+</section>
+
+<div class="strip"><div class="wrap">
+<span>Built for B2B teams in</span><span>SaaS</span><span>Consulting</span><span>Agencies</span><span>Technology</span><span>Professional services</span>
+</div></div>
+
+<section id="why">
+<div class="wrap">
+<span class="eyebrow">The difference</span>
+<h2>Not more meetings. <em>The right meetings.</em></h2>
+<p class="lead">A full calendar means nothing if the calls go nowhere. We agree on who counts as a good fit before we start, then only book people who meet that bar.</p>
+<div class="grid3">
+<div class="card"><h3>Sharper targeting</h3><p>We define the roles, company types and buying signals that make a prospect worth your time.</p></div>
+<div class="card"><h3>Human conversations</h3><p>Every message is researched and written by a person to start a real dialogue, not to fill an inbox.</p></div>
+<div class="card"><h3>A protected calendar</h3><p>Before a meeting is booked, we check four things:</p>
+<ul class="checks"><li>Matches your ideal customer</li><li>Has a clear need</li><li>Has decision access</li><li>Timing makes sense</li></ul></div>
+</div>
+</div>
+</section>
+
+<section id="how" style="background:#0d1020;border-block:1px solid var(--line)">
+<div class="wrap">
+<span class="eyebrow">How it works</span>
+<h2>From ideal buyer to <em>booked call.</em></h2>
+<div class="grid4">
+<div><div class="num">1</div><h3>Map the market</h3><p>You tell us who you sell to. We build the target list and the buying signals.</p></div>
+<div><div class="num">2</div><h3>Start conversations</h3><p>Research-led outreach by email and LinkedIn, written in your voice.</p></div>
+<div><div class="num">3</div><h3>Qualify and book</h3><p>We confirm fit, add context, and schedule directly on your calendar.</p></div>
+<div><div class="num">4</div><h3>Report and refine</h3><p>You get a simple summary of replies and meetings, and we improve from your feedback.</p></div>
+</div>
+</div>
+</section>
+
+<section id="offer">
+<div class="wrap offer">
+<div>
+<span class="tag">LAUNCH DEMO</span>
+<h2><span data-bind="pilotCount">1</span> qualified appointment. <em>One simple price.</em></h2>
+<p class="lead">A low-risk way to try us. If we can't deliver, you get your money back.</p>
+<div class="price"><span data-bind="price">$19</span> <small>for the demo</small></div>
+<p class="fine" style="margin-top:12px">See our quality first. Ongoing plans are priced separately.</p>
+<div class="cta-row"><a class="btn" data-checkout href="#offer">Start the demo</a></div>
+<p class="fine">Secure checkout by Whop. After payment you get a short intake form and we start within 2 business days.</p>
+</div>
+<div class="card">
+<h3>What's included</h3>
+<ul class="checks">
+<li><span data-bind="pilotCount">1</span> qualified appointment on your calendar</li>
+<li>Target list built around your ideal customer</li>
+<li>Outreach written and sent for you</li>
+<li>Delivery within <span data-bind="days">21</span> days of your intake form</li>
+<li><span data-bind="refund">Full refund if we don't deliver.</span></li>
+</ul>
+<h3 style="margin-top:26px">What counts as "qualified"</h3>
+<p>The person is in your target role and company type, has a real need, can make or influence the buying decision, and has agreed to a call. We confirm these with you before we start.</p>
+</div>
+</div>
+</section>
+
+<section id="faq" style="background:#0d1020;border-block:1px solid var(--line)">
+<div class="wrap" style="max-width:820px">
+<span class="eyebrow">FAQ</span>
+<h2>Straight answers.</h2>
+<details><summary>Why is the demo so affordable?</summary><p>It's a launch offer so you can judge our work before spending real money, and so we can earn case studies. Ongoing work is priced higher, and we'll show you that pricing before you decide.</p></details>
+<details><summary>What happens after I pay?</summary><p>You receive a short intake form about your offer and ideal customer. We confirm the qualification criteria with you, then start outreach within 2 business days.</p></details>
+<details><summary>How fast will I get appointments?</summary><p>We aim to deliver within <span data-bind="days">21</span> days of receiving your completed intake form. Timing can vary with your market and audience, and we'll tell you early if we expect a delay.</p></details>
+<details><summary>What if you can't deliver?</summary><p><span data-bind="refund">Full refund if we don't deliver your appointment.</span> Email us and we'll process it.</p></details>
+<details><summary>What time zones do you work in?</summary><p>We're a remote team and schedule calls to fit your hours. Tell us your time zone (ET, CT, MT, PT) on the intake form and we'll book around it.</p></details>
+<details><summary>Is your outreach compliant?</summary><p>Yes. We follow CAN-SPAM for email, include opt-out options, and honor do-not-contact requests. We don't buy or send to unverified personal lists.</p></details>
+<details><summary>Can this connect to my CRM or calendar?</summary><p>Meetings are booked directly on your calendar (Google, Outlook, Calendly). CRM handoffs can be set up after the demo.</p></details>
+</div>
+</section>
+
+<section class="final">
+<div class="wrap">
+<h2>Ready to see the quality for yourself?</h2>
+<p class="lead" style="margin-inline:auto">Start the <span data-bind="pilotCount">1</span>-appointment demo for <span data-bind="price">$19</span>. <span data-bind="refund">Full refund if we don't deliver.</span></p>
+<div class="cta-row" style="justify-content:center"><a class="btn" data-checkout href="#offer" style="max-width:420px">Start the demo</a></div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="wrap foot">
+<div><a class="brand" href="#top"><span class="logo">P</span>PREMIUM SETTER</a><p style="margin-top:12px;max-width:340px">Qualified conversations for B2B revenue teams.</p></div>
+<div><b style="color:#fff">Explore</b><a href="#how">How it works</a><a href="#offer">Demo offer</a><a href="#faq">FAQ</a></div>
+<div><b style="color:#fff">Contact</b><a data-email href="#">Email us</a></div>
+<div><b style="color:#fff">Legal</b><a href="#privacy">Privacy</a><a href="#terms">Terms</a><a href="#refunds">Refunds</a></div>
+</div>
+<div class="wrap" style="margin-top:28px">© 2026 Premium Setter. All rights reserved.</div>
+</footer>
+
+<!-- STARTER LEGAL TEXT: have this reviewed by a professional before launch. -->
+<div class="legal"><div class="wrap" style="max-width:820px">
+<h2 id="privacy">Privacy Policy</h2>
+<p>We collect the information you give us at checkout and on our intake form (name, email, company and details about your offer). Payments are processed by Whop; we never see or store your card details. We use your information only to deliver your service and to contact you about it. We do not sell your personal information. To ask for your data to be deleted, email us.</p>
+<h2 id="terms">Terms of Service</h2>
+<p>By purchasing, you agree to give us accurate information about your business and to approve your target criteria. We book appointments with prospects who meet the qualification criteria we agreed with you. We do not guarantee that any appointment will turn into a sale. You are responsible for the sales conversations that follow.</p>
+<h2 id="refunds">Refund Policy</h2>
+<p data-bind="refundPolicy">If we do not deliver the agreed number of qualified appointments within the delivery window, email us and we will refund your payment in full.</p>
+</div></div>
+
+<script>
+// ===== CONFIG: edit these values =====
+var CONFIG = {
+  price: "$19",
+  pilotCount: "1",
+  perAppt: "$50",
+  days: "21",
+  refund: "Full refund if we don't deliver your appointment.",
+  refundPolicy: "If we do not deliver the agreed number of qualified appointments within the delivery window, email us and we will refund your payment in full.",
+  // IMPORTANT: this must be a Whop plan priced at the PRICE above. The old link below charges $5.
+  checkoutUrl: "https://whop.com/checkout/plan_gMNfvwMIqje3y",
+  email: "hello@premiumsetter.com",
+  founderName: "[Your name], Founder",
+  founderBio: "[Write 2–3 honest sentences: your background, who you've helped, why you started Premium Setter. Add a real photo and LinkedIn link when ready.]"
+};
+// =====================================
+(function(){
+  document.querySelectorAll("[data-bind]").forEach(function(el){
+    var k = el.getAttribute("data-bind");
+    if (k === "initial") { el.textContent = (CONFIG.founderName.replace(/[^A-Za-z]/g,"").charAt(0) || "P").toUpperCase(); return; }
+    if (CONFIG[k] != null) el.textContent = CONFIG[k];
+  });
+  document.querySelectorAll("[data-checkout]").forEach(function(a){ a.href = CONFIG.checkoutUrl; a.target = "_blank"; a.rel = "noopener"; });
+  document.querySelectorAll("[data-email]").forEach(function(a){ a.href = "mailto:" + CONFIG.email; if (a.textContent.indexOf("@") === -1 && a.textContent !== "Email us") a.textContent = CONFIG.email; });
+})();
+</script>
+</body>
+</html>
